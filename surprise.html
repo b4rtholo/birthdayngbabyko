@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF5F8">
+  <meta name="description" content="A little birthday garden made with love.">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">22 ♡</a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html" class="" >⌂ Home</a><a href="letters.html" class="" >♡ Love Letters</a><a href="memories.html" class="" >✿ Our Memories</a><a href="calendar.html" class="" >♡ Calendar</a><a href="surprise.html" class="active" aria-current="page">✧ Birthday Surprise</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero"><span class="eyebrow">Saved until the very end</span><h1 class="script-title">One Last Little Surprise</h1><p class="surprise-intro">Before you go, I have one more thing to tell you...</p></section>
+  <section class="container surprise-stage">
+    <div class="surprise-card reveal">
+      <div class="surprise-bouquet" aria-hidden="true">🌷🌸🌹<br>🌼💐🌸</div>
+      <button id="reveal-surprise" class="btn" type="button">Reveal Your Surprise ♡</button>
+      <div id="surprise-content" class="surprise-content" hidden>
+        <h2 class="script-title">For You, My Babyyy</h2>
+        <div id="final-letter" class="surprise-letter"></div>
+        <div class="music-area"><button id="music-toggle" class="btn secondary" type="button">Play Our Song ♫</button>
+          <audio id="our-song" controls preload="none" src="music/bd.mp3" hidden><span>Your browser does not support audio.</span></audio>
+          <p id="music-note" class="music-note" hidden>Add your own audio file at <code>music/bd.mp3</code> to play your song here.</p>
+        </div>
+        <div class="btn-row"><button class="btn" type="button" data-hearts>More hearts for you ♡</button><a class="btn secondary" href="memories.html">Look through our memories</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">Made with all my love, just for you <span class="footer-heart">♡</span></footer>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">🌸</button>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/surprise.js"></script>
+</body>
+</html>

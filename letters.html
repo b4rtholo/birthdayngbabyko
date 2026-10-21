@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF5F8">
+  <meta name="description" content="A little birthday garden made with love.">
+  <title>Love Letters</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">22 ♡</a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html" class="" >⌂ Home</a><a href="letters.html" class="active" aria-current="page">♡ Love Letters</a><a href="memories.html" class="" >✿ Our Memories</a><a href="calendar.html" class="" >♡ Calendar</a><a href="surprise.html" class="" >✧ Birthday Surprise</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero"><span class="eyebrow">For every kind of day</span><h1 class="script-title">Letters I Wrote for You</h1><p>A reminder that I love you and I'm here always.</p></section>
+  <section class="container">
+    <div class="letters-grid" id="letters-grid" aria-label="Love letter envelopes"></div>
+    <div class="quote-card reveal">You can come back to these letters whenever you need a little comfort, a smile, or a reminder that someone is cheering for you. ♡</div>
+  </section>
+  <div class="modal-backdrop" id="letter-modal" hidden role="dialog" aria-modal="true" aria-labelledby="letter-modal-title">
+    <article class="letter-paper"><button type="button" class="modal-close" aria-label="Close letter">×</button><h2 id="letter-modal-title"></h2><div class="letter-text" id="letter-modal-text"></div></article>
+  </div>
+</main>
+
+<footer class="site-footer">Made with all my love, just for you <span class="footer-heart">♡</span></footer>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">🌸</button>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/letters.js"></script>
+</body>
+</html>
